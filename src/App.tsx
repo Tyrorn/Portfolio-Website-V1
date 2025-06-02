@@ -1,28 +1,27 @@
-import { useState } from "react";
 import "./App.css";
 import bgImage from "./assets/background.jpg";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import HomePage from "./components/HomePage";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    /* Wrap this Root Route to create Router here */
+    <Route path="/" element={<HomePage />}></Route>
+  )
+);
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div
         className="background"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
+        <RouterProvider router={router} />
       </div>
     </>
   );
