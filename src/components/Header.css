@@ -21,7 +21,7 @@
 }
 
 .title {
-  color: rgb(54, 54, 41);
+  color: rgb(0, 0, 0);
   word-break: break-word;
   white-space: nowrap;
   flex: 1 1 0;
