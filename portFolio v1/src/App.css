@@ -1,10 +1,3 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +32,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.background {
+  background-size: cover;
+  background-image: url("/assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; /* lets height adjust based on width */
+  max-width: 100vw; /* won't overflow viewport width */
 }
