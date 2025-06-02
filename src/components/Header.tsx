@@ -1,6 +1,4 @@
-import React from "react";
 import "./Header.css";
-import glassesIcon from "../assets/glasses-icon.png";
 import certifiedIcon from "../assets/dev.jpg";
 
 function Header() {
